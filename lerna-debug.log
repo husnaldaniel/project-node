@@ -1,0 +1,86 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   'conventional-commits': true,
+0 silly argv   conventionalCommits: true,
+0 silly argv   yes: true,
+0 silly argv   y: true,
+0 silly argv   lernaVersion: '5.5.2',
+0 silly argv   '$0': 'node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v5.5.2
+2 verbose rootPath C:\Users\husnaldaniel\Desktop\test-yarn
+3 info current version 0.0.0
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch husnal
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream husnal is behind origin/husnal by 0 commit(s) and ahead by 0
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "050181b" => {"refCount":"2","sha":"050181b","isDirty":false}
+14 info Assuming all packages changed
+15 verbose updated @test-yarn/common
+16 verbose updated @test-yarn/server
+17 verbose git-describe undefined => "050181b"
+18 silly git-describe parsed => {"refCount":"2","sha":"050181b","isDirty":false}
+19 silly fixed for @test-yarn/common at C:\Users\husnaldaniel\Desktop\test-yarn\packages\common
+20 verbose getChangelogConfig using preset "conventional-changelog-angular"
+21 silly npa Result {
+21 silly npa   type: 'tag',
+21 silly npa   registry: true,
+21 silly npa   where: undefined,
+21 silly npa   raw: 'conventional-changelog-angular',
+21 silly npa   name: 'conventional-changelog-angular',
+21 silly npa   escapedName: 'conventional-changelog-angular',
+21 silly npa   scope: undefined,
+21 silly npa   rawSpec: '',
+21 silly npa   saveSpec: null,
+21 silly npa   fetchSpec: 'latest',
+21 silly npa   gitRange: undefined,
+21 silly npa   gitCommittish: undefined,
+21 silly npa   hosted: undefined
+21 silly npa }
+22 verbose getChangelogConfig Attempting to resolve preset "conventional-changelog-angular"
+23 info getChangelogConfig Successfully resolved preset "conventional-changelog-angular"
+24 verbose fixed increment 1.0.0 by patch
+25 silly fixed for @test-yarn/server at C:\Users\husnaldaniel\Desktop\test-yarn\packages\server
+26 verbose fixed increment 1.0.0 by patch
+27 info auto-confirmed
+28 info execute Skipping releases
+29 silly lifecycle No script for "preversion" in "test-yarn", continuing
+30 silly lifecycle No script for "preversion" in "@test-yarn/common", continuing
+31 verbose version @test-yarn/common has no lockfile. Skipping lockfile update.
+32 silly lifecycle No script for "version" in "@test-yarn/common", continuing
+33 silly fixed for @test-yarn/common at C:\Users\husnaldaniel\Desktop\test-yarn\packages\common
+34 silly fixed writing new entry: "## 1.0.1 (2022-09-22)\n\n**Note:** Version bump only for package @test-yarn/common\n\n\n\n"
+35 verbose fixed wrote C:\Users\husnaldaniel\Desktop\test-yarn\packages\common\CHANGELOG.md
+36 silly lifecycle No script for "preversion" in "@test-yarn/server", continuing
+37 verbose version @test-yarn/server has no lockfile. Skipping lockfile update.
+38 silly lifecycle No script for "version" in "@test-yarn/server", continuing
+39 silly fixed for @test-yarn/server at C:\Users\husnaldaniel\Desktop\test-yarn\packages\server
+40 silly fixed writing new entry: "## 1.0.1 (2022-09-22)\n\n**Note:** Version bump only for package @test-yarn/server\n\n\n\n"
+41 verbose fixed wrote C:\Users\husnaldaniel\Desktop\test-yarn\packages\server\CHANGELOG.md
+42 silly root for test-yarn at C:\Users\husnaldaniel\Desktop\test-yarn
+43 silly root writing new entry: "## 1.0.1 (2022-09-22)\n\n**Note:** Version bump only for package test-yarn\n\n\n\n"
+44 verbose root wrote C:\Users\husnaldaniel\Desktop\test-yarn\CHANGELOG.md
+45 silly lifecycle No script for "version" in "test-yarn", continuing
+46 silly gitAdd [
+46 silly gitAdd   'packages/common/package.json',
+46 silly gitAdd   'packages/common/CHANGELOG.md',
+46 silly gitAdd   'packages/server/package.json',
+46 silly gitAdd   'packages/server/CHANGELOG.md',
+46 silly gitAdd   'CHANGELOG.md',
+46 silly gitAdd   'lerna.json'
+46 silly gitAdd ]
+47 silly gitCommit v1.0.1
+48 verbose git [ 'commit', '-m', 'v1.0.1' ]
+49 silly gitTag v1.0.1
+50 verbose git [ 'tag', 'v1.0.1', '-m', 'v1.0.1' ]
+51 error Error: Command failed with exit code 128: git tag v1.0.1 -m v1.0.1
+51 error fatal: tag 'v1.0.1' already exists
+51 error     at makeError (C:\Users\husnaldaniel\Desktop\test-yarn\node_modules\execa\lib\error.js:60:11)
+51 error     at handlePromise (C:\Users\husnaldaniel\Desktop\test-yarn\node_modules\execa\index.js:118:26)
+51 error     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+51 error     at async Promise.all (index 0)
